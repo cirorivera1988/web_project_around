@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyecto ALrededor del mundo para JS Basico"
+    />
+    <meta name="author" content="Ciro Rivera" />
+    <meta name="keywords" content="JavaScript, DOM, ciro, responsivas" />
+    <title>Alrededor de Estados Unidos</title>
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <script src="/scripts/edit.js"></script>
+    <div class="page">
+      <header class="header">
+        <img
+          src="images/header_logo.png"
+          alt="header logo"
+          class="header_logo"
+        />
+        <img src="images/Line.png" alt="header line" class="header_line" />
+      </header>
+      <main class="content">
+        <section class="profile">
+          <img
+            src="images/Avatar.png"
+            alt="Jacques Cousteau"
+            class="profile_avatar"
+          />
+          <div class="profile_info">
+            <h2 class="profile_info-name">Jacques Cousteau</h2>
+
+            <button
+              class="profile_info-edit-logo"
+              id="editProfileButton"
+              aria-label="Editar perfil"
+            >
+              <img src="/images/edit.png" alt="Edit Button" />
+            </button>
+
+            <p class="profile_info-occupation">Explorador</p>
+          </div>
+
+          <img
+            src="images/Add_Button.png"
+            alt="Add Button"
+            class="profile_Add"
+          />
+        </section>
+
+        <section class="element">
+          <div class="element_card">
+            <img
+              src="images/Rio.jpg"
+              alt="Valle de Yosemite"
+              class="element_card-image"
+            />
+            <div class="element_card-description">
+              <p class="element_card-description-name">Valle de Yosemite</p>
+              <img
+                src="/images/ico_heart.png"
+                alt="like Button"
+                class="element_card-description-name-like"
+              />
+            </div>
+          </div>
+          <div class="element_card">
+            <img
+              src="images/Nevado.jpg"
+              alt="Lago Louise"
+              class="element_card-image"
+            />
+            <div class="element_card-description">
+              <p class="element_card-description-name">Lago Louise</p>
+              <img
+                src="/images/ico_heart.png"
+                alt="like Button"
+                class="element_card-description-name-like"
+              />
+            </div>
+          </div>
+          <div class="element_card">
+            <img
+              src="images/atardecer.jpg"
+              alt="Montañas Calvas"
+              class="element_card-image"
+            />
+            <div class="element_card-description">
+              <p class="element_card-description-name">Montañas Calvas</p>
+              <img
+                src="/images/ico_heart.png"
+                alt="like Button"
+                class="element_card-description-name-like"
+              />
+            </div>
+          </div>
+          <div class="element_card">
+            <img
+              src="images/Montaña_noche.jpg"
+              alt="Latemar"
+              class="element_card-image"
+            />
+            <div class="element_card-description">
+              <p class="element_card-description-name">Latemar</p>
+              <img
+                src="/images/ico_heart.png"
+                alt="like Button"
+                class="element_card-description-name-like"
+              />
+            </div>
+          </div>
+          <div class="element_card">
+            <img
+              src="images/rio_espejo.jpg"
+              alt="Vanois National"
+              class="element_card-image"
+            />
+            <div class="element_card-description">
+              <p class="element_card-description-name">Vanois National</p>
+              <img
+                src="/images/ico_heart.png"
+                alt="like Button"
+                class="element_card-description-name-like"
+              />
+            </div>
+          </div>
+          <div class="element_card">
+            <img
+              src="images/Puerto.jpg"
+              alt="Lago di Braies"
+              class="element_card-image"
+            />
+            <div class="element_card-description">
+              <p class="element_card-description-name">Lago di Braies</p>
+              <img
+                src="images/ico_heart.png"
+                alt="like Button"
+                class="element_card-description-name-like"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>&copy; 2024 Around The U.S.</p>
+      </footer>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup">
+      <div class="popup_close">
+        <button class="popup_close-bottom" id="popupClose">X</button>
+      </div>
+      <form class="popup__form">
+        <h1 class="popup_form-title">Editar Perfil</h1>
+        <input
+          class="popup_form-inputName"
+          name="name"
+          type="text"
+          placeholder="Nombre"
+          id="input-name"
+        />
+        <input
+          class="popup_form-inputDescription"
+          name="description"
+          type="text"
+          placeholder="Acerca de mí"
+          id="input-description"
+        />
+        <input type="submit" class="form__button" value="Guardar" />
+      </form>
+    </div>
+    <script src="/scripts/edit.js"></script>
+  </body>
+</html>

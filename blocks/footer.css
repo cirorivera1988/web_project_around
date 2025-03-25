@@ -1,0 +1,13 @@
+.footer {
+  max-width: 318px;
+  max-height: 18px;
+
+  margin-left: 200px;
+  color: rgba(84, 84, 84, 1);
+}
+@media screen and (max-width: 870px) {
+  .footer {
+    text-align: center;
+    padding: 10px;
+  }
+}

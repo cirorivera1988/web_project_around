@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  background-color: #000;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+@media screen and (max-width: 870px) {
+  .page {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    width: 100%;
+    height: 100vh;
+  }
+}
