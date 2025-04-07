@@ -1,15 +1,13 @@
 .content {
   max-width: 880px;
-  margin: 40px 200px 0 200px;
+  margin: 30px auto;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 880px) {
   .content {
-    width: 90%;
-    margin: auto;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .content {
     width: 95%;
   }

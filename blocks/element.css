@@ -1,6 +1,4 @@
 .element {
-  max-width: 880px;
-  max-height: 743px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: grid;
@@ -50,7 +48,7 @@
   opacity: 50%;
   cursor: pointer;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 880px) {
   .element {
     grid-template-columns: 282px 282px;
     grid-template-rows: 361px 361px 361px;
@@ -59,7 +57,7 @@
     margin: 30px auto 0 auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .element {
     display: flex;
     flex-direction: column;

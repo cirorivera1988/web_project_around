@@ -1,7 +1,6 @@
 .header {
-  max-width: 100vh;
   max-height: 74px;
-  margin: 45px auto 0 auto;
+  margin: 45px auto 45px auto;
   border-width: 1px;
   display: flex;
   flex-direction: column;
@@ -19,17 +18,12 @@
   border-width: 1px;
   border: 1px solid rgba(84, 84, 84, 1);
 }
-@media screen and (max-width: 870px) {
-  .header {
-    max-width: 500px;
-    flex-direction: column;
-    text-align: center;
-  }
+@media screen and (max-width: 880px) {
   .header_line {
-    max-width: 80%;
+    width: 100%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .header {
     display: flex;
     max-width: 320px;

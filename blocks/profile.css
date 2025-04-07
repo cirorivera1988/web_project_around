@@ -1,7 +1,5 @@
 .profile {
   display: flex;
-  width: 880px;
-  max-height: 120px;
   align-items: center;
 }
 
@@ -11,10 +9,12 @@
   margin-right: 30px;
 }
 .profile_info {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 415px;
-  height: 77px;
+  display: grid;
+  grid-template-columns: 372px 34px;
+  grid-template-rows: 39px 38px;
+  grid-template-areas:
+    "profile_info-name profile_info-edit-logo"
+    "profile_info-occupation profile_info-edit-logo";
 }
 .profile_info-name {
   max-width: 373px;
@@ -54,23 +54,38 @@
   max-height: 50px;
   margin: auto;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 880px) {
   .profile {
     flex-direction: column;
-    align-items: center;
     margin: auto;
   }
 
-  .profile img {
-    width: 120px;
-    height: 120px;
+  .profile_info-edit-logo-image {
+    margin: 15px 0 0 18px;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border: none;
+  }
+  .profile_Add {
+    width: 280px;
+    max-height: 50px;
+    margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .profile img {
-    width: 100px;
-    height: 100px;
+@media screen and (max-width: 580px) {
+  .profile_info-edit-logo-image {
+    margin: 15px 0 0 18px;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border: none;
+  }
+  .profile_Add {
+    width: 280px;
+    max-height: 50px;
+    margin-top: 10px;
   }
   .profile {
     flex-direction: column;

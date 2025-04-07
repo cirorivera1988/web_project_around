@@ -12,7 +12,7 @@
 .overlay.active {
   display: block;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 880px) {
   .overlay {
     width: 100%;
     height: 100%;
