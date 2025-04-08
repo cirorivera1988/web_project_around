@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const popupForm = document.querySelector(".popup");
   const closeButton = document.getElementById("popupClose");
   const overlay = document.getElementById("overlay");
-  const saveButton = document.querySelector(".form__button");
+  const saveButton = document.querySelector(".popup__form-button");
   const nameInput = document.getElementById("input-name");
   const descInput = document.getElementById("input-description");
   const profileName = document.querySelector(".profile__info-name");
@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
   if (likeButtons.length > 0) {
     likeButtons.forEach((likeButton) => {
       likeButton.addEventListener("click", function () {

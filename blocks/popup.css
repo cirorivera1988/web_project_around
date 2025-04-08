@@ -34,7 +34,7 @@
   height: 23;
   margin: 34px 64px 54px 36px;
 }
-.form__button {
+.popup__form-button {
   width: 358px;
   cursor: pointer;
   border: 1px solid rgba(196, 196, 196, 1);
