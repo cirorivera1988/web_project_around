@@ -5,12 +5,12 @@
   display: flex;
   flex-direction: column;
 }
-.header_logo {
+.header__logo {
   max-width: 173px;
   max-height: 33px;
   margin-right: auto;
 }
-.header_line {
+.header__line {
   max-width: 750px;
   margin-top: 41px;
   margin-left: auto;
@@ -19,7 +19,7 @@
   border: 1px solid rgba(84, 84, 84, 1);
 }
 @media screen and (max-width: 880px) {
-  .header_line {
+  .header__line {
     width: 100%;
   }
 }
@@ -28,10 +28,10 @@
     display: flex;
     max-width: 320px;
   }
-  .header_line {
+  .header__line {
     max-width: 80%;
   }
-  .header_logo {
+  .header__logo {
     justify-self: center;
   }
 }

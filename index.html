@@ -11,7 +11,7 @@
     <meta name="keywords" content="JavaScript, DOM, ciro, responsivas" />
     <title>Alrededor de Estados Unidos</title>
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="./favicon.svg" />
+    <link rel="icon" href="/favicon.svg" />
   </head>
   <body>
     <div class="page">
@@ -19,130 +19,130 @@
         <img
           src="images/header_logo.png"
           alt="header logo"
-          class="header_logo"
+          class="header__logo"
         />
-        <img src="images/Line.png" alt="header line" class="header_line" />
+        <img src="images/Line.png" alt="header line" class="header__line" />
       </header>
       <main class="content">
         <section class="profile">
           <img
             src="images/Avatar.png"
             alt="Jacques Cousteau"
-            class="profile_avatar"
+            class="profile__avatar"
           />
-          <div class="profile_info">
-            <h2 class="profile_info-name">Jacques Cousteau</h2>
+          <div class="profile__info">
+            <h2 class="profile__info-name">Jacques Cousteau</h2>
 
             <button
-              class="profile_info-edit-logo"
+              class="profile__info-edit-logo"
               id="editProfileButton"
               aria-label="Editar perfil"
             >
               <img
                 src="/images/edit.png"
                 alt="Edit Button"
-                class="profile_info-edit-logo-image"
+                class="profile__info-edit-logo-image"
               />
             </button>
 
-            <p class="profile_info-occupation">Explorador</p>
+            <p class="profile__info-occupation">Explorador</p>
           </div>
 
           <img
             src="images/Add_Button.png"
             alt="Add Button"
-            class="profile_Add"
+            class="profile__Add"
           />
         </section>
 
         <section class="element">
-          <div class="element_card">
+          <div class="element__card">
             <img
               src="images/Rio.jpg"
               alt="Valle de Yosemite"
-              class="element_card-image"
+              class="element__card-image"
             />
-            <div class="element_card-description">
-              <p class="element_card-description-name">Valle de Yosemite</p>
+            <div class="element__card-description">
+              <p class="element__card-description-name">Valle de Yosemite</p>
               <img
                 src="/images/ico_heart.png"
                 alt="like Button"
-                class="element_card-description-name-like"
+                class="element__card-description-name-like"
               />
             </div>
           </div>
-          <div class="element_card">
+          <div class="element__card">
             <img
               src="images/Nevado.jpg"
               alt="Lago Louise"
-              class="element_card-image"
+              class="element__card-image"
             />
-            <div class="element_card-description">
-              <p class="element_card-description-name">Lago Louise</p>
+            <div class="element__card-description">
+              <p class="element__card-description-name">Lago Louise</p>
               <img
                 src="/images/ico_heart.png"
                 alt="like Button"
-                class="element_card-description-name-like"
+                class="element__card-description-name-like"
               />
             </div>
           </div>
-          <div class="element_card">
+          <div class="element__card">
             <img
               src="images/atardecer.jpg"
               alt="Montañas Calvas"
               class="element_card-image"
             />
-            <div class="element_card-description">
-              <p class="element_card-description-name">Montañas Calvas</p>
+            <div class="element__card-description">
+              <p class="element__card-description-name">Montañas Calvas</p>
               <img
                 src="/images/ico_heart.png"
                 alt="like Button"
-                class="element_card-description-name-like"
+                class="element__card-description-name-like"
               />
             </div>
           </div>
-          <div class="element_card">
+          <div class="element__card">
             <img
               src="images/Montaña_noche.jpg"
               alt="Latemar"
-              class="element_card-image"
+              class="element__card-image"
             />
-            <div class="element_card-description">
-              <p class="element_card-description-name">Latemar</p>
+            <div class="element__card-description">
+              <p class="element__card-description-name">Latemar</p>
               <img
                 src="/images/ico_heart.png"
                 alt="like Button"
-                class="element_card-description-name-like"
+                class="element__card-description-name-like"
               />
             </div>
           </div>
-          <div class="element_card">
+          <div class="element__card">
             <img
               src="images/rio_espejo.jpg"
               alt="Vanois National"
-              class="element_card-image"
+              class="element__card-image"
             />
-            <div class="element_card-description">
-              <p class="element_card-description-name">Vanois National</p>
+            <div class="element__card-description">
+              <p class="element__card-description-name">Vanois National</p>
               <img
                 src="/images/ico_heart.png"
                 alt="like Button"
-                class="element_card-description-name-like"
+                class="element__card-description-name-like"
               />
             </div>
           </div>
-          <div class="element_card">
+          <div class="element__card">
             <img
               src="images/Puerto.jpg"
               alt="Lago di Braies"
-              class="element_card-image"
+              class="element__card-image"
             />
-            <div class="element_card-description">
-              <p class="element_card-description-name">Lago di Braies</p>
+            <div class="element__card-description">
+              <p class="element__card-description-name">Lago di Braies</p>
               <img
                 src="images/ico_heart.png"
                 alt="like Button"
-                class="element_card-description-name-like"
+                class="element__card-description-name-like"
               />
             </div>
           </div>
@@ -154,20 +154,20 @@
     </div>
     <div class="overlay" id="overlay"></div>
     <div class="popup">
-      <div class="popup_close">
-        <button class="popup_close-bottom" id="popupClose">X</button>
+      <div class="popup__close">
+        <button class="popup__close-bottom" id="popupClose">X</button>
       </div>
       <form class="popup__form">
-        <h1 class="popup_form-title">Editar Perfil</h1>
+        <h1 class="popup__form-title">Editar Perfil</h1>
         <input
-          class="popup_form-inputName"
+          class="popup__form-inputName"
           name="name"
           type="text"
           placeholder="Nombre"
           id="input-name"
         />
         <input
-          class="popup_form-inputDescription"
+          class="popup__form-inputDescription"
           name="description"
           type="text"
           placeholder="Acerca de mí"

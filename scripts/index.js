@@ -3,14 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const popupForm = document.querySelector(".popup");
   const closeButton = document.getElementById("popupClose");
   const overlay = document.getElementById("overlay");
-  const saveButton = document.querySelector(".form__button"); // Botón "Guardar"
-  const nameInput = document.getElementById("input-name"); // Input de nombre
-  const descInput = document.getElementById("input-description"); // Input de descripción
-  const profileName = document.querySelector(".profile_info-name"); // Nombre en el perfil
-  const profileDesc = document.querySelector(".profile_info-occupation"); // Descripción en el perfil
-
+  const saveButton = document.querySelector(".form__button");
+  const nameInput = document.getElementById("input-name");
+  const descInput = document.getElementById("input-description");
+  const profileName = document.querySelector(".profile__info-name");
+  const profileDesc = document.querySelector(".profile__info-occupation");
   let likeButtons = document.querySelectorAll(
-    ".element_card-description-name-like"
+    ".element__card-description-name-like"
   );
 
   if (editButton && popupForm && closeButton && overlay) {
@@ -28,8 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
       popupForm.classList.remove("active");
       overlay.classList.remove("active");
     });
-  } else {
-    console.error("Uno o más elementos del popup no se encontraron en el DOM.");
   }
 
   if (saveButton) {
@@ -42,8 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         popupForm.classList.remove("active");
         overlay.classList.remove("active");
-      } else {
-        console.error("Uno o más elementos del formulario no se encontraron.");
       }
     });
   }
@@ -60,7 +55,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
-  } else {
-    console.error("No se encontraron botones de like en el DOM.");
   }
 });
