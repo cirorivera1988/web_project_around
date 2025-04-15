@@ -36,6 +36,7 @@
 }
 .popup__form-button {
   width: 358px;
+  height: 50.15px;
   cursor: pointer;
   border: 1px solid rgba(196, 196, 196, 1);
   border-width: 1px;
@@ -48,8 +49,9 @@
   text-align: center;
   color: rgba(196, 196, 196, 1);
   margin: 30px auto 0 auto;
+  background-color: white;
 }
-.form__button:hover {
+.popup__form-button:hover {
   color: white;
   background-color: black;
 }
